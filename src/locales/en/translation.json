@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "accueil": {
+    "titre1": "Developer",
+    "bouton": "Download &nbsp; C.V",
+    "titre2": "Fullstack JS & Mobile",
+    "description": "Passionate about web development, I turn innovative ideas into digital solutions. Always seeking new challenges, I am eager to enhance my skills and learn new technologies."
+  },
+  "about": {
+    "titre": "About",
+    "profil": "Profile",
+    "xp": "Experience",
+    "boss": "Education",
+    "competence": "Skills",
+    "bio": "As a fullstack JS and mobile developer, I design high-performance and intuitive applications to meet the needs of businesses and entrepreneurs. With expertise in modern technologies, I transform your ideas into innovative digital solutions. My goal: deliver high-quality products aligned with market trends to boost your business."
+  },
+  "service": {
+    "titre": "Services",
+    "desc": "Passionate developer specializing in building modern and high-performance web applications. I transform your ideas into innovative digital solutions using the most popular technologies on the market.",
+    "sub_title": "Ready to start your project?",
+    "desc_title": "I am available to turn your ideas into innovative digital solutions. Contact me to discuss your project.",
+    "btn": "Discuss Your Project",
+    "titre-service": {
+      "1": "Frontend Web Development",
+      "2": "Backend Development",
+      "3": "Responsive Applications",
+      "4": "Web Optimization",
+      "5": "Web & Mobile Applications",
+      "6": "Project Management"
+    },
+    "description": {
+      "1": "Creating modern and responsive interfaces for a seamless user experience.",
+      "2": "Designing secure APIs and efficient database management.",
+      "3": "Developing applications optimized for all screen sizes.",
+      "4": "Improving performance and SEO optimization for websites.",
+      "5": "Building custom applications tailored to your needs.",
+      "6": "Efficient planning and tracking with collaborative tools."
+    }
+  },
+  "project": {
+    "titre": "Projects",
+    "sous_titre1": "Turn Your Ideas into Reality",
+    "sous_titre2": "Ready to bring your vision to life? I'm here to help.",
+    "btn": "Interested",
+    "view_details": "View Details",
+    "title": {
+      "1": "E-commerce Platform",
+      "2": "Taxi Reservation Management System (Admin Side)",
+      "3": "Dashboard Analytics",
+      "4": "External Captive Portal System",
+      "5": "Creative Portfolio"
+    },
+    "detail": {
+      "1": "A modern and high-performance e-commerce platform designed to provide a seamless user experience. It includes features such as cart management, secure payments, real-time order tracking, and a comprehensive admin dashboard. This solution is ideal for small and large businesses looking to digitize their sales.",
+      "2": "An online taxi reservation management system specifically designed for administrators. This application offers advanced features such as real-time driver tracking, customer and booking management, as well as detailed reports to optimize operations. It simplifies coordination between drivers and customers while improving overall efficiency.",
+      "3": "An interactive and intuitive dashboard designed to analyze complex data in real-time. It allows users to visualize performance through dynamic charts, generate customized reports, and identify key trends. Ideal for businesses looking to make informed decisions based on accurate data.",
+      "4": "A robust captive portal solution for managing network access for users. It includes secure authentication, customization options for businesses, and integration of analytical tools to monitor network usage. This platform is ideal for hotels, cafés, or any public space offering Wi-Fi access.",
+      "5": "An interactive online portfolio designed to showcase my skills, projects, and achievements in an elegant way. This site is optimized for smooth navigation and features modern animations that capture visitors' attention. Perfect for highlighting my expertise and attracting professional opportunities."
+    }
+  },
+  "contact": {
+    "titre": "Contact Me",
+    "desc": "Feel free to reach out to discuss your projects or ask any questions. I'm always happy to explore new opportunities.",
+    "coordonnees": "My Contact Information",
+    "envoyer_message": "Send Me a Message",
+    "send_mess": "Send Message",
+    "holderName": "Your name",
+    "holderEmail": "Your email",
+    "holderMess": "Your message"
+  }
+}

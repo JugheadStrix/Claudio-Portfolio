@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html::selection {
+  background-color: red !important;
+}
+
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #3182ce #edf2f7;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #3182ce;
+  border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #edf2f7;
+}
+
+.custom-rounded {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.custom-rounded1 {
+  border-radius: 59% 41% 24% 76% / 55% 77% 23% 45%;
+}

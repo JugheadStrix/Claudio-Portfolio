@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/font/Roboto-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/font/Poppins-Regular.ttf) format(truetype);
+}
+
+:root {
+  --hue: 0;
+  --stat: 0%;
+  --title-color: hsl(var(--hue), var(--stat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--stat), 0%);
+  --text-color: hsl(var(--hue), var(--stat), 46%);
+
+  --morphisme: 7px 7px 15px #45566754, -8px -8px 15px #5165790a,
+    inset -5px -4px 13px 0px #51657959, inset 6px 7px 12px 0px #fffffff0;
+  --morphisme1: 7px 7px 15px #45566754, -8px -8px 15px #5165790a,
+    inset -5px -4px 13px 0px #51657959, inset 6px 7px 12px 0px #ffffff69;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.s_logo {
+  transform: rotate(45deg);
+}
+
+.icon i {
+  cursor: pointer;
+  color: #585858;
+  transition: all 0.2s;
+}
+.icon i:hover {
+  color: black;
+  transform: translateY(-2px);
+}
+
+.links a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.box {
+  padding: 11rem 0 6rem;
+}
+
+/* ACCUEIL */
+
+.description {
+  line-height: 2rem;
+}
+
+.img {
+  object-fit: contain;
+  border-radius: 50% 0 50% 50%;
+}
+
+.strix {
+  box-shadow: var(--morphisme1);
+}
+
+/* ABOUT */
+
+.titre {
+  position: relative;
+  width: max-content;
+  margin-bottom: 3rem;
+}
+
+.titre::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  bottom: -10px;
+  left: 20%;
+  height: 3px;
+  background-color: #3a3a3a;
+  border-radius: 5px;
+}
+
+.sous_titre {
+  position: relative;
+  width: max-content;
+  margin-bottom: 1rem;
+}
+
+.sous_titre::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  background-color: #3a3a3a;
+  border-radius: 5px;
+}
+
+.contact_design {
+  content: url(./assets/images/smart-approved.png);
+  position: absolute;
+  left: 7rem;
+  bottom: -4rem;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+.cube-wrapper-modern {
+  perspective: 1200px;
+  width: 4rem;
+  height: 4rem;
+  transform-style: preserve-3d;
+}
+
+.cube-modern {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotateY(45deg);
+  animation: spinCubeModer 5s infinite linear;
+}
+
+.face-modern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.face-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face-shadow {
+  z-index: -1;
+}
+
+.front-modern {
+  transform: rotateY(0deg) translateZ(2rem);
+}
+.back-modern {
+  transform: rotateY(180deg) translateZ(2rem);
+}
+.left-modern {
+  transform: rotateY(-90deg) translateZ(2rem);
+}
+.right-modern {
+  transform: rotateY(90deg) translateZ(2rem);
+}
+.top-modern {
+  transform: rotateX(90deg) translateZ(2rem);
+}
+.bottom-modern {
+  transform: rotateX(-90deg) translateZ(2rem);
+}
+
+@media (max-width: 570px) {
+  .cube-wrapper-modern {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .front-modern {
+    transform: rotateY(0deg) translateZ(1.5rem);
+  }
+  .back-modern {
+    transform: rotateY(180deg) translateZ(1.5rem);
+  }
+  .left-modern {
+    transform: rotateY(-90deg) translateZ(1.5rem);
+  }
+  .right-modern {
+    transform: rotateY(90deg) translateZ(1.5rem);
+  }
+  .top-modern {
+    transform: rotateX(90deg) translateZ(1.5rem);
+  }
+  .bottom-modern {
+    transform: rotateX(-90deg) translateZ(1.5rem);
+  }
+}
+
+@keyframes spinCubeModer {
+  from {
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+  to {
+    transform: rotateX(405deg) rotateY(405deg);
+  }
+}
+/* ***************************************** */
+.langue {
+  background: linear-gradient(-70deg, rgb(255, 255, 255) 60%, #1e293b 40%);
+  cursor: pointer;
+}
+.langue:hover {
+  background: linear-gradient(-70deg, rgb(238, 238, 238) 60%, #1e293b 40%);
+}
