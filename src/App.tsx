@@ -8,7 +8,6 @@ import Service from "./pages/Service";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import Background3D from "./components/Background3D";
 
 function App() {
   return (
