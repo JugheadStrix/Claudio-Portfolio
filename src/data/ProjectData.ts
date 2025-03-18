@@ -3,7 +3,7 @@ import {
   Code,
   Database,
   Github,
-  Globe,
+  // Globe,
   Layout,
   Linkedin,
   Mail,
@@ -20,7 +20,6 @@ import {
 } from "../utils/type";
 import smart from "../assets/images/smart.webp";
 import serviceTaxi from "../assets/images/service-taxi.jpg";
-import dashboard from "../assets/images/dashboard.svg";
 import samplePortal from "../assets/images/Sample_Captive_Portal_splash_page.png";
 import portfolio from "../assets/images/portfolio.webp";
 
@@ -65,37 +64,36 @@ export const educationsData: Education[] = [
 ];
 
 export const experienceData: Experience[] = [
+  // {
+  //   id: 1,
+  //   date: "Avril 2025 - Mai 2025",
+  //   lieu: "Tech-zone Fianarantsoa",
+  //   titre: "Developpeur frontend",
+  //   theme: "Conception et création d'une application web : publicité manager.",
+  // },
   {
-    id: 1,
-    date: "Déc 2024 - Fev 2025",
+    id: 2,
+    date: "Fev 2025 - Mai 2025",
     lieu: "A.I.M Madagascar",
     titre: "Developpeur web et mobile",
     theme:
-      "Système de gestion des paiements avec interface web pour l'administration et application mobile pour les caissiers. Paiements sécurisés via QR code unique, avec synchronisation des données sur le serveur central.",
+      "Mise en place d’un système de gestion des paiements composé d’une interface web pour l’administration et d’une application mobile destinée aux caissiers. Les caissiers peuvent importer la liste des bénéficiaires, valider leur identité par scan de QR code, enregistrer les paiements, puis synchroniser les données localement stockées avec le serveur central",
   },
   {
-    id: 2,
-    date: "Nov 2024 - Déc 2024 ",
+    id: 3,
+    date: "Nov 2024 - Jan 2025 ",
     lieu: "Tech-zone Fianarantsoa",
     titre: "Developpeur web et mobile",
     theme:
       "Concevoir et réaliser un site web de gestion des vouchers pour l’accès à internet avec le système portail captif et une application mobile dédiée à la vente des vouchers.",
   },
   {
-    id: 3,
+    id: 4,
     date: "Jun 2024-Oct 2024 ",
     lieu: "Natik Coorporation Fianarantsoa",
     titre: "Developpeur full stack, stagiaire",
     theme:
       "Conception et realisation d'une application web de gestion de reservation de taxi en ligne.",
-  },
-  {
-    id: 4,
-    date: "20 - 21 Octobre 2023",
-    lieu: "Hackathon inter-universitaire de Fianarantsoa",
-    titre: "Hack-IT : 48 heures d'innovation !",
-    theme:
-      "Energie verte : creér des solutions intelligentes pour un avenir durable.",
   },
 ];
 
@@ -125,7 +123,7 @@ export const competancesData: Competence[] = [
   {
     id: 4,
     competence: "Outils",
-    lists: ["GitHub", "Trello", "VsCode", "Postman"],
+    lists: ["Docker", "GitHub", "Trello", "Postman"],
   },
   // Ajoutez vos compétences ici
 ];
@@ -136,37 +134,39 @@ export const servicesData: Service[] = [
     icon: Code,
     title: "service.titre-service.1",
     description: "service.description.1",
-    technologies: ["React", "Vue.js", "TypeScript", "Tailwind CSS"],
+    technologies: ["React", "Vue.js", "..."],
   },
   {
     icon: Database,
     title: "service.titre-service.2",
     description: "service.description.2",
-    technologies: ["Node.js", "Python", "MongoDB", "PostgreSQL"],
+    technologies: ["Node.js", "Express", "..."],
   },
   {
     icon: Smartphone,
     title: "service.titre-service.3",
     description: "service.description.3",
-    technologies: ["Mobile First", "PWAs", "Cross-browser"],
+    technologies: ["Mobile First"],
   },
-  {
-    icon: Globe,
-    title: "service.titre-service.4",
-    description: "service.description.4",
-    technologies: ["Stripe", "API RESTful", "SEO", "Performance"],
-  },
+  // {
+  //   icon: Globe,
+  //   title: "service.titre-service.4",
+  //   description: "service.description.4",
+  //   technologies: ["Stripe", "API RESTful", "SEO", "Performance"],
+  // },
   {
     icon: Layout,
     title: "service.titre-service.5",
     description: "service.description.5",
-    technologies: ["React Native", "Flutter", "GraphQL", "Firebase"],
+    // technologies: ["React Native", "Flutter", "GraphQL", "Firebase"],
+    technologies: [],
   },
   {
     icon: ClipboardCheck,
     title: "service.titre-service.6",
     description: "service.description.6",
-    technologies: ["Jira", "Trello", "Slack", "Asana"],
+    // technologies: ["Jira", "Trello", "Slack", "Asana"],
+    technologies: [],
   },
 ];
 
@@ -178,7 +178,7 @@ export const projectData: ProjectData[] = [
     type: "Application Web",
     image: smart,
     description: "project.detail.1",
-    technologies: ["Vue.js", "Firebase", "Vuetify"],
+    technologies: ["React", "Tailwind css"],
     githubLink: "",
     demoLink: "",
   },
@@ -188,20 +188,20 @@ export const projectData: ProjectData[] = [
     type: "Application Web",
     image: serviceTaxi,
     description: "project.detail.2",
-    technologies: ["Laravel", "Vue.js", "MySQL"],
+    technologies: ["Node (TypeScript)", "Vue.js", "VueTify", "MongoDB"],
     githubLink: "",
     demoLink: "",
   },
-  {
-    id: 3,
-    titre: "project.title.3",
-    type: "Tableau de Bord",
-    image: dashboard,
-    description: "project.detail.3",
-    technologies: ["Angular", "D3.js", "Express", "PostgreSQL"],
-    githubLink: "",
-    demoLink: "",
-  },
+  // {
+  //   id: 3,
+  //   titre: "project.title.3",
+  //   type: "Tableau de Bord",
+  //   image: dashboard,
+  //   description: "project.detail.3",
+  //   technologies: ["Angular", "D3.js", "Express", "PostgreSQL"],
+  //   githubLink: "https://github.com/JugheadStrix/Hack-cces",
+  //   demoLink: "",
+  // },
   {
     id: 4,
     titre: "project.title.4",
@@ -209,7 +209,7 @@ export const projectData: ProjectData[] = [
     image: samplePortal,
     description: "project.detail.4",
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
-    githubLink: "",
+    githubLink: "https://github.com/JugheadStrix/wifizone_project",
     demoLink: "",
   },
   {
@@ -219,7 +219,7 @@ export const projectData: ProjectData[] = [
     image: portfolio,
     description: "project.detail.5",
     technologies: ["React (TypeScript)", "Framer Motion", "Tailwind CSS"],
-    githubLink: "",
-    demoLink: "",
+    githubLink: "https://github.com/JugheadStrix/Claudio-Portfolio",
+    demoLink: "https://jugheadstrix.github.io/Claudio-Portfolio/",
   },
 ];

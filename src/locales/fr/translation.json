@@ -50,14 +50,14 @@
     "btn": "Intéressé",
     "voir_details": "Voir détails",
     "title": {
-      "1": "Plateforme de Commerce Électronique",
+      "1": "Plateforme de Suivi et Paiement pour des bénéficiaires",
       "2": "Gestion de Réservation de Taxi (Côté Administrateur)",
       "3": "Tableau de Bord Analytics",
       "4": "Système de Captive Portal Externe",
       "5": "Portfolio Créatif"
     },
     "detail": {
-      "1": "Une plateforme de commerce électronique moderne et performante, conçue pour offrir une expérience utilisateur fluide. Elle intègre des fonctionnalités comme la gestion de panier, des paiements sécurisés, un suivi des commandes en temps réel, ainsi qu'un tableau de bord complet pour les administrateurs. Cette solution est idéale pour les petites et grandes entreprises souhaitant digitaliser leurs ventes.",
+      "1": "Une plateforme de gestion moderne et efficace, conçue pour faciliter la distribution de services à des bénéficiaires. Elle permet une gestion fluide des bénéficiaires, l'enregistrement des transactions par les caissiers, un suivi en temps réel des opérations, ainsi qu’un tableau de bord détaillé pour les administrateurs. Cette solution est idéale pour les organisations ou structures souhaitant digitaliser et sécuriser leur processus de distribution.",
       "2": "Un système de gestion de réservations en ligne pour taxis, spécialement conçu pour les administrateurs. Cette application propose des fonctionnalités avancées comme le suivi des chauffeurs en temps réel, la gestion des clients et des réservations, ainsi que des rapports détaillés pour optimiser les opérations. Elle simplifie la coordination entre chauffeurs et clients tout en améliorant l'efficacité globale.",
       "3": "Un tableau de bord interactif et intuitif conçu pour analyser des données complexes en temps réel. Il permet de visualiser les performances à l'aide de graphiques dynamiques, de générer des rapports personnalisés et d'identifier des tendances clés. Idéal pour les entreprises cherchant à prendre des décisions éclairées basées sur des données précises.",
       "4": "Une solution de captive portal robuste permettant de gérer l'accès au réseau pour les utilisateurs. Elle inclut une authentification sécurisée, des options de personnalisation pour les entreprises, et une intégration d'outils d'analyse pour suivre l'utilisation du réseau. Cette plateforme est idéale pour les hôtels, cafés ou tout autre espace public offrant une connexion Wi-Fi.",
