@@ -18,6 +18,11 @@ import {
   ProjectData,
   Service,
 } from "../utils/type";
+import smart from "../assets/images/smart.webp";
+import serviceTaxi from "../assets/images/service-taxi.jpg";
+import dashboard from "../assets/images/dashboard.svg";
+import samplePortal from "../assets/images/Sample_Captive_Portal_splash_page.png";
+import portfolio from "../assets/images/portfolio.webp";
 
 //! HEADER
 export const navLinksData: LabLink[] = [
@@ -171,7 +176,7 @@ export const projectData: ProjectData[] = [
     id: 1,
     titre: "project.title.1",
     type: "Application Web",
-    image: "/src/assets/images/smart.webp",
+    image: smart,
     description: "project.detail.1",
     technologies: ["Vue.js", "Firebase", "Vuetify"],
     githubLink: "https://github.com/yourusername/ecommerce-platform",
@@ -181,7 +186,7 @@ export const projectData: ProjectData[] = [
     id: 2,
     titre: "project.title.2",
     type: "Application Web",
-    image: "/src/assets/images/service-taxi.jpg",
+    image: serviceTaxi,
     description: "project.detail.2",
     technologies: ["Laravel", "Vue.js", "MySQL"],
     githubLink: "https://github.com/yourusername/taxi-management",
@@ -191,7 +196,7 @@ export const projectData: ProjectData[] = [
     id: 3,
     titre: "project.title.3",
     type: "Tableau de Bord",
-    image: "/src/assets/images/dashboard.svg",
+    image: dashboard,
     description: "project.detail.3",
     technologies: ["Angular", "D3.js", "Express", "PostgreSQL"],
     githubLink: "https://github.com/yourusername/dashboard-analytics",
@@ -201,7 +206,7 @@ export const projectData: ProjectData[] = [
     id: 4,
     titre: "project.title.4",
     type: "Solution Réseau",
-    image: "/src/assets/images/Sample_Captive_Portal_splash_page.png",
+    image: samplePortal,
     description: "project.detail.4",
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
     githubLink: "https://github.com/yourusername/captive-portal",
@@ -211,7 +216,7 @@ export const projectData: ProjectData[] = [
     id: 5,
     titre: "project.title.5",
     type: "Site Web Personnel",
-    image: "/src/assets/images/portfolio.webp",
+    image: portfolio,
     description: "project.detail.5",
     technologies: ["React (TypeScript)", "Framer Motion", "Tailwind CSS"],
     githubLink: "",
