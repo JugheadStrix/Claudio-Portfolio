@@ -72,7 +72,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-slate-600 hover:text-slate-900 transition-colors duration-200"
+                className="text-slate-600 truncate hover:text-slate-900 transition-colors duration-200"
               >
                 {t(link.labelKey)}
               </a>
