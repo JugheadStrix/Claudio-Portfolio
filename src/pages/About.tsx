@@ -47,14 +47,14 @@ const About = () => {
       </motion.div>
 
       {/* Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-6xl mx-auto px-4">
         {/* Experiance Card */}
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100"
+          className="bg-white rounded-2xl p-6 shadow-md border border-slate-100 sm:col-span-2"
         >
           {/* //! Profil */}
           <div className="flex items-center gap-3 mb-8">
@@ -67,9 +67,16 @@ const About = () => {
           <div className="space-y-6">
             <p className="text-slate-600 text-lg">{t("about.bio")}</p>
           </div>
-          <div className="border-b mt-8"></div>
+        </motion.div>
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100"
+        >
           {/* //! Experiance */}
-          <div className="flex items-center gap-3 my-8">
+          <div className="flex items-center gap-3 mb-8">
             <BriefcaseBusiness className="text-slate-700 w-8 h-8" />
             <h3 className="text-2xl font-semibold text-slate-800">
               {t("about.xp")}
