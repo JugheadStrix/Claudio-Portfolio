@@ -34,15 +34,15 @@ export const navLinksData: LabLink[] = [
 ];
 
 export const socialLinksData = [
-  { Icon: Phone, href: "https://wa.me/qr/6HW3V2AKALSJO1", label: "WhatsApp" },
+  { Icon: Phone, href: "https://wa.me/261343068478", label: "WhatsApp" },
   {
     Icon: Linkedin,
-    href: "https://linkedin.com/",
+    href: "https://www.linkedin.com/in/rakotondrabe-kantoarimiora-442426342",
     label: "LinkedIn",
   },
   {
     Icon: Mail,
-    href: "mailto:claudio.kantoarimiora@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=claudio.kantoarimiora@gmail.com",
     label: "Email",
   },
   {
@@ -179,8 +179,8 @@ export const projectData: ProjectData[] = [
     image: smart,
     description: "project.detail.1",
     technologies: ["Vue.js", "Firebase", "Vuetify"],
-    githubLink: "https://github.com/yourusername/ecommerce-platform",
-    demoLink: "https://ecommerce-demo.com",
+    githubLink: "",
+    demoLink: "",
   },
   {
     id: 2,
@@ -189,8 +189,8 @@ export const projectData: ProjectData[] = [
     image: serviceTaxi,
     description: "project.detail.2",
     technologies: ["Laravel", "Vue.js", "MySQL"],
-    githubLink: "https://github.com/yourusername/taxi-management",
-    demoLink: "https://taxi-admin-demo.com",
+    githubLink: "",
+    demoLink: "",
   },
   {
     id: 3,
@@ -199,8 +199,8 @@ export const projectData: ProjectData[] = [
     image: dashboard,
     description: "project.detail.3",
     technologies: ["Angular", "D3.js", "Express", "PostgreSQL"],
-    githubLink: "https://github.com/yourusername/dashboard-analytics",
-    demoLink: "https://dashboard-demo.com",
+    githubLink: "",
+    demoLink: "",
   },
   {
     id: 4,
@@ -209,8 +209,8 @@ export const projectData: ProjectData[] = [
     image: samplePortal,
     description: "project.detail.4",
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
-    githubLink: "https://github.com/yourusername/captive-portal",
-    demoLink: "https://captive-portal-demo.com",
+    githubLink: "",
+    demoLink: "",
   },
   {
     id: 5,
