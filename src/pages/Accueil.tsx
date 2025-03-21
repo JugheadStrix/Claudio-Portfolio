@@ -18,8 +18,8 @@ import { useTranslation } from "react-i18next";
 const Accueil = () => {
   const downloadCv = () => {
     const link = document.createElement("a");
-    link.href = "/CV1.pdf";
-    link.download = "RAKOTONDRABE_Kantoarimiora_Claudio_CV.pdf"; // Nom du fichier à télécharger
+    link.href = "/Claudio-Portfolio/CV1.pdf";
+    link.download = "CV RAKOTONDRABE_Kantoarimiora_Claudio.pdf";
     link.click();
   };
 
@@ -34,25 +34,11 @@ const Accueil = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-16">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 relative space-y-6 sm:space-y-8 text-center lg:text-left mt-8 lg:mt-0">
-            {/* <div className="absolute -inset-2 z-0">
-              <svg
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-full"
-              >
-                <path
-                  fill="#F8EDA9"
-                  d="M68.2,-36.1C80.8,-17.5,78.2,13.1,64.3,23.8C50.5,34.5,25.2,25.3,7,21.2C-11.3,17.2,-22.5,18.4,-34.4,8.8C-46.4,-0.8,-59,-21,-53.3,-35.6C-47.7,-50.1,-23.9,-58.9,2,-60.1C27.8,-61.2,55.5,-54.7,68.2,-36.1Z"
-                  transform="translate(100 100)"
-                />
-              </svg>
-            </div> */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
               className="space-y-4 bg-none"
-              style={{ zIndex: "99999999999999999" }}
             >
               <h1
                 style={{ lineHeight: "3.3rem" }}
