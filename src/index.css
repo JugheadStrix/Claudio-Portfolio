@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 html::selection {
-  background-color: red !important;
+  background-color: #d7958c !important;
+  color: #1e293b;
 }
 
 .scrollbar {
@@ -30,4 +31,12 @@ html::selection {
 
 .custom-rounded1 {
   border-radius: 59% 41% 24% 76% / 55% 77% 23% 45%;
+}
+
+.teste {
+  background-image: linear-gradient(to bottom, #ffffffdb, #ddddddd1),
+    url(./assets/images/portfolio.webp);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
 }

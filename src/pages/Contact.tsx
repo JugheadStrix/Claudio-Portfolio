@@ -176,7 +176,7 @@ function Contact() {
                   type="submit"
                   className="w-full group bg-gradient-to-r from-[#b36c64]/60 text-slate-800 to-[#d7958c]/60 font-medium py-4 px-6 rounded-xl hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 relative overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#b36c64]/20 to-[#d7958c]/20 translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#b36c64]/20 to-[#d7958c]/20 translate-x-0 group-hover:translate-x-full transition-transform duration-300" />
                   <span className="relative">{t("contact.send_mess")}</span>
                   <Send className="w-4 h-4 group-hover:scale-125 transition-all relative" />
                 </button>

@@ -75,29 +75,36 @@ const About = () => {
           viewport={{ once: true }}
           className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100"
         >
-          {/* //! Experiance */}
+          {/* //! Competence */}
           <div className="flex items-center gap-3 mb-8">
-            <BriefcaseBusiness className="text-slate-700 w-8 h-8" />
+            <BarChartBigIcon className="text-slate-700 w-8 h-8" />
             <h3 className="text-2xl font-semibold text-slate-800">
-              {t("about.xp")}
+              {t("about.competence")}
             </h3>
           </div>
 
           <div className="space-y-6">
-            {experienceData.map((exp) => (
+            {competancesData.map((comp) => (
               <motion.div
-                key={exp.id}
+                key={comp.id}
                 variants={item}
                 className="flex items-start gap-4"
               >
-                <div className="flex flex-wrap gap-2 text-lg">
-                  <span className="font-medium text-slate-800">
-                    {exp.titre}
+                <div className="w-3 h-3 rounded-full bg-emerald-400 mt-2 flex-shrink-0"></div>
+                <div>
+                  <span className="font-semibold text-slate-800 text-lg">
+                    {comp.competence} :
                   </span>
-                  <i className="text-slate-800 font-thin">
-                    {exp.lieu}, {exp.date}
-                  </i>
-                  <span className="text-slate-600 text-base ">{exp.theme}</span>
+                  <div className="flex flex-wrap gap-2 mt-1">
+                    {comp.lists.map((skill, index) => (
+                      <span
+                        key={index}
+                        className="text-slate-600 bg-green-50 shadow-md px-3 py-1 rounded-full text-sm"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -137,37 +144,39 @@ const About = () => {
               </motion.div>
             ))}
           </div>
-          <div className="border-b mt-8"></div>
-          {/* //! Competence */}
-          <div className="flex items-center gap-3 my-8">
-            <BarChartBigIcon className="text-slate-700 w-8 h-8" />
+          {/* <div className="border-b mt-8"></div> */}
+        </motion.div>
+
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100 lg:order-2 sm:col-span-2"
+        >
+          {/* //! Experiance */}
+          <div className="flex items-center gap-3 mb-8">
+            <BriefcaseBusiness className="text-slate-700 w-8 h-8" />
             <h3 className="text-2xl font-semibold text-slate-800">
-              {t("about.competence")}
+              {t("about.xp")}
             </h3>
           </div>
 
           <div className="space-y-6">
-            {competancesData.map((comp) => (
+            {experienceData.map((exp) => (
               <motion.div
-                key={comp.id}
+                key={exp.id}
                 variants={item}
                 className="flex items-start gap-4"
               >
-                <div className="w-3 h-3 rounded-full bg-emerald-400 mt-2 flex-shrink-0"></div>
-                <div>
-                  <span className="font-semibold text-slate-800 text-lg">
-                    {comp.competence} :
+                <div className="flex flex-wrap gap-2 text-lg">
+                  <span className="font-medium text-slate-800">
+                    {exp.titre}
                   </span>
-                  <div className="flex flex-wrap gap-2 mt-1">
-                    {comp.lists.map((skill, index) => (
-                      <span
-                        key={index}
-                        className="text-slate-600 bg-green-50 shadow-md px-3 py-1 rounded-full text-sm"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                  <i className="text-slate-800 font-thin">
+                    {exp.lieu}, {exp.date}
+                  </i>
+                  <span className="text-slate-600 text-base ">{exp.theme}</span>
                 </div>
               </motion.div>
             ))}

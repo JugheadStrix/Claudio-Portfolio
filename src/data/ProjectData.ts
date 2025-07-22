@@ -1,6 +1,7 @@
 import {
   ClipboardCheck,
   Code,
+  Container,
   Database,
   Github,
   // Globe,
@@ -77,7 +78,7 @@ export const experienceData: Experience[] = [
     lieu: "A.I.M Madagascar",
     titre: "Developpeur web et mobile",
     theme:
-      "Mise en place d’un système de gestion des paiements composé d’une interface web pour l’administration et d’une application mobile destinée aux caissiers. Les caissiers peuvent importer la liste des bénéficiaires, valider leur identité par scan de QR code, enregistrer les paiements, puis synchroniser les données localement stockées avec le serveur central",
+      "Mise en place d’un système de gestion des paiements composé d’une interface web pour l’administration et d’une application mobile destinée aux caissiers. Les caissiers peuvent importer la liste des bénéficiaires, valider leur identité par scan de QR code, enregistrer les paiements, puis synchroniser les données localement stockées avec le serveur central.",
   },
   {
     id: 3,
@@ -148,17 +149,18 @@ export const servicesData: Service[] = [
     description: "service.description.3",
     technologies: ["Mobile First"],
   },
-  // {
-  //   icon: Globe,
-  //   title: "service.titre-service.4",
-  //   description: "service.description.4",
-  //   technologies: ["Stripe", "API RESTful", "SEO", "Performance"],
-  // },
   {
     icon: Layout,
     title: "service.titre-service.5",
     description: "service.description.5",
     // technologies: ["React Native", "Flutter", "GraphQL", "Firebase"],
+    technologies: [],
+  },
+  {
+    icon: Container,
+    title: "service.titre-service.4",
+    description: "service.description.4",
+    // technologies: ["Stripe", "API RESTful", "SEO", "Performance"],
     technologies: [],
   },
   {
@@ -178,7 +180,7 @@ export const projectData: ProjectData[] = [
     type: "Application Web",
     image: smart,
     description: "project.detail.1",
-    technologies: ["React", "Tailwind css"],
+    technologies: ["React", "Tailwind css", "Node-Express", "Flutter"],
     githubLink: "",
     demoLink: "",
   },

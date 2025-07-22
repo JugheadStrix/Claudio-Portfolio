@@ -22,27 +22,33 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
-            className="bg-white relative rounded-2xl shadow-xl max-w-2xl w-full max-h-[80vh] overflow-auto scrollbar-thin scrollbar-track-white scrollbar-thumb-neutral-300"
+            className="relative rounded-2xl backdrop-blur-md shadow-xl max-w-2xl w-full max-h-[80vh] overflow-auto scrollbar-thin scrollbar-track-white scrollbar-thumb-neutral-300"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, #ffffffdb, #ddddddd1), url(${project.image})`,
+              backgroundColor: "black",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 p-3 bg-gray-100 text-gray-700 rounded-full shadow-md hover:bg-gray-200 transition-all duration-300 transform hover:scale-105"
+              className="absolute top-4 right-4 p-1.5 bg-[#ff7474] rounded-md shadow-md text-white hover:bg-red-500 transition-color duration-300 transform"
             >
               <X className="w-5 h-5" />
             </button>
 
             {/* Modal Header */}
-            <div className="p-4 bg-slate-200">
+            {/* <div className="p- bg-slate-200">
               <img
                 src={project.image}
                 alt={project.titre}
                 className="w-full h-72 rounded-md object-cover"
               />
-            </div>
+            </div> */}
 
             {/* Modal Content */}
-            <div className="p-6 space-y-6 border border-t-4 border-slate-400">
+            <div className="p-6 space-y-6 border-slate-400">
               <h3 className="text-2xl font-bold text-slate-800">
                 {project.titre}
               </h3>
@@ -55,7 +61,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-sm"
+                    className="px-3 py-1 bg-slate-100 border border-gray-200 shadow text-slate-600 rounded-full text-sm"
                   >
                     {tech}
                   </span>
@@ -83,7 +89,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                   href={project.demoLink || "#"}
                   target={project.demoLink ? "_blank" : undefined}
                   rel={project.demoLink ? "noopener noreferrer" : undefined}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg bg-white/50 transition-colors ${
                     project.demoLink
                       ? "border border-slate-200 text-black hover:bg-slate-50"
                       : "border border-slate-300 text-gray-500 cursor-not-allowed"
